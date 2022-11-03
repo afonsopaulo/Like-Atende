@@ -45,10 +45,10 @@ function clienteSim(){
             <div>
                 <button onclick="finaceiro()">Finaceiro</button>
                 <button onclick="suporteTecnico()">Suporte Tecnico</button>
-                <button onclick="comercial()">Comercial</button> 
             </div>
     </div>
     `  
+    // <button onclick="comercial()">Comercial</button> 
     //dados do relatorio
     rel02.innerText = `Cliente: Sim`
     console.log("Cliente: sim")
@@ -506,15 +506,23 @@ function radioSt(){
 //funcoes que mostram o motivo da solicitação
 //lentidao , queda , offline , nao-conectado
 function lentidao(){
+    //passo 6
+    rel06.innerText = `Motivo: Lentidão`
     console.log("Motivo lentidão")
 }
 function queda(){
+    //passo 6
+    rel06.innerText = `Motivo: Queda`
     console.log("Motivo Queda de Sinal")
 }
 function Offline(){
+    //passo 6
+    rel06.innerText = `Motivo: Offline`
     console.log("Motivo Offline")
 }
 function nao_Conectado(){
+    //passo 6
+    rel06.innerText = `Motivo: Não Conectado`
     console.log("Motivo Não Conectado")
 }
 
