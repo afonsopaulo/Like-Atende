@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header do site */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3281AF;
+}
+
+header .boas_vindas{
+    font-size: 20px;
+    color: white;
+}
+
+header img{
+    width: 180px;
+    margin-top: 5px;
+}
+
+/*classe cont*/
+.cont{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-color: #E0FFFF;
+}
+
+/*estilo do relatorio*/
+.relatorio{
+    margin: 20px auto;
+    background-color: white;
+    width: 50%;
+}
+
+/*margin de 30px pra qualquer elemento*/
+.m30{
+    margin-top: 30px; 
+}
+
+/*estilo da class de captura*/
+.captura{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.captura p{
+    font-size: 25px;
+}
+.captura input{
+    margin-top: 10px;
+    width: 70%;
+    height: 30px;
+    font-size: 15px;
+    border:  solid 0.1px #A9A9A9;
+    border-radius: 3px;
+    color: #1C1C1C;
+    padding: 5px;
+}
+
+.captura button{
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 0.1px solid #A9A9A9;
+    background-color: #3281AF;
+    color: white;
+    
+}
+.captura button:hover{
+    background-color: white;
+    color: #3281AF;
+}
+
+/*estilo da opção de cliente*/
+
+/*estilo passo01*/
+.passo01{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    width: 40%;
+    text-align: center;
+}
+.passo01, .passo02, h4{
+    font-size: 20px;
+}
+.passo01 button{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 0.1px solid #A9A9A9;
+    background-color: #3281AF;
+    color: white;
+    font-size: 15px;
+}
+.passo01 button:hover{
+    background-color: white;
+    color: #3281AF;
+}
+/*estilo passo 02*/
+
+.passo02{
+    margin: 20px auto;
+    width: 70%;
+    text-align: center;
+}
+.passo02 button{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 0.1px solid #A9A9A9;
+    background-color: #3281AF;
+    color: white;
+    font-size: 15px;
+}
+.passo02 button:hover{
+    background-color: white;
+    color: #3281AF;
+}
+
+/*estilo do caminhos finaceiro*/
+.finaceiro{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+.finaceiro button{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 0.1px solid #A9A9A9;
+    background-color: #3281AF;
+    color: white;
+    font-size: 15px;
+}
+.finaceiro button:hover{
+    background-color: white;
+    color: #3281AF;
+}
+
+/*sugunda via boleto e seus estilos*/
+.segunda_via_boleto{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+.segunda_via_boleto button{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 0.1px solid #A9A9A9;
+    background-color: #3281AF;
+    color: white;
+    font-size: 15px;
+}
+.segunda_via_boleto button:hover{
+    background-color: white;
+    color: #3281AF;
+}
+
+/*estilo do video de explicação*/
+.video_explicativo iframe{
+    margin-top: 20px;
+}
+
+.video_pix iframe{
+    margin-top: 20px;
+}
+
+/*pagamentos e seus estilos*/
+.pagamento_via_pix{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+.pagamento_via_pix button{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 0.1px solid #A9A9A9;
+    background-color: #3281AF;
+    color: white;
+    font-size: 15px;
+}
+.pagamento_via_pix button:hover{
+    background-color: white;
+    color: #3281AF;
+}
+
+/*estilo do botao do caminho pagamento pix*/
+.central_pix{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 30%;
+    text-align: center;
+}
+
+.central_pix button{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 0.1px solid #A9A9A9;
+    background-color: #3281AF;
+    color: white;
+    font-size: 15px;
+}
+.central_pix button:hover{
+    background-color: white;
+    color: #3281AF;
+}
+
+/*negociacão e seus estilos*/
+.negociacao{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+.negociacao button{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 0.1px solid #A9A9A9;
+    background-color: #3281AF;
+    color: white;
+    font-size: 15px;
+}
+.negociacao button:hover{
+    background-color: white;
+    color: #3281AF;
+}
+
+/*enviar comprovante e seus estilos*/
+.enviar_comprovante{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+.enviar_comprovante button{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 0.1px solid #A9A9A9;
+    background-color: #3281AF;
+    color: white;
+    font-size: 15px;
+}
+.enviar_comprovante button:hover{
+    background-color: white;
+    color: #3281AF;
+}
+
+/*estilo de informaçao da promessa do pagamento do boleto*/
+.texto_info_promessa{
+    text-align: center;
+    padding: 5px;
+    background-color: #A9A9A9;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.texto_finalizar{
+    text-align: center;
+    padding: 5px;
+    background-color: #8B0000;
+    width: 25%;
+    margin: 20px auto;
+    border-radius: 10px;
+    color: #E0FFFF;
+}
+.texto_finalizar button{
+    background-color: #8B0000;
+    color: white;
+    border: none;
+}
+
+.texto_info_anexar{
+    text-align: center;
+    padding: 5px;
+    background-color: #FFD700;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/*promessa de pagamento e seus estilos*/
+.promessa_de_pagamento{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+.promessa_de_pagamento button{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 0.1px solid #A9A9A9;
+    background-color: #3281AF;
+    color: white;
+    font-size: 15px;
+}
+.promessa_de_pagamento button:hover{
+    background-color: white;
+    color: #3281AF;
+}
+
+
+/*estilo dos caminhos suporte tecnico*/
+.suporte_Tecnico{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+.suporte_Tecnico button{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 0.1px solid #A9A9A9;
+    background-color: #3281AF;
+    color: white;
+    font-size: 15px;
+}
+.suporte_Tecnico button:hover{
+    background-color: white;
+    color: #3281AF;
+}
+
+/*estilos dos botes de tipos de conexão*/
+.tipo_da_conexao{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 60%;
+    text-align: center;
+}
+.tipo_da_conexao button{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 0.1px solid #A9A9A9;
+    background-color: #3281AF;
+    color: white;
+    font-size: 15px;
+}
+.tipo_da_conexao button:hover{
+    background-color: white;
+    color: #3281AF;
+}
+
+/*estilos dos botoes de possiveis problemas*/
+.problemas{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 90%;
+    text-align: center;
+}
+.problemas button{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 0.1px solid #A9A9A9;
+    background-color: #3281AF;
+    color: white;
+    font-size: 15px;
+}
+.problemas button:hover{
+    background-color: white;
+    color: #3281AF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
