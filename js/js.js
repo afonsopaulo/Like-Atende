@@ -6,6 +6,14 @@ let passo04 = document.getElementById("passo04")
 let passo05 = document.getElementById("passo05")
 let passo06 = document.getElementById("passo06")
 
+// aqui vai ficar as ids do relatorio final
+let rel01 = document.getElementById("rel01")
+let rel02 = document.getElementById("rel02")
+let rel03 = document.getElementById("rel03")
+let rel04 = document.getElementById("rel04")
+let rel05 = document.getElementById("rel05")
+let rel06 = document.getElementById("rel06")
+let rel07 = document.getElementById("rel07")
 
 //funçao de enviar recebe o nome do cliente
 function enviar(){
@@ -24,18 +32,15 @@ function enviar(){
     </div>`
 
     //dados do relatorio
-    let relatorioNome = document.getElementById("rel01")
-    relatorioNome.innerText = ` Nome : ${nome}`
+    rel01.innerText = ` Nome : ${nome}`
     
 }
 
 //funçao se o cliente clicar em sim
 function clienteSim(){
-
-    let passo02 = document.getElementById("passo02") // id passo02
-    
+    // passo 2
     passo02.innerHTML = `
-    <div class="passo02">
+    <div class="pos">
             <h4>Escolha uma das opções</h4>
             <div>
                 <button onclick="finaceiro()">Finaceiro</button>
@@ -44,9 +49,8 @@ function clienteSim(){
             </div>
     </div>
     `  
-    //dados pro relatorio
-    let relatorioCliente = document.getElementById("rel02")
-    relatorioCliente.innerText = `Cliente: Sim`
+    //dados do relatorio
+    rel02.innerText = `Cliente: Sim`
     console.log("Cliente: sim")
 }
 
@@ -57,19 +61,21 @@ let clienteNao = function(){
     //passo 2
     passo02.innerHTML = `
         <div class="pos">
-            <h4>Não é Cliente</h4>
+            <h4>Escolha uma das opções</h4>
             <div>
                 <button onclick="comercial()">Comercial</button>
                 <button onclick="administrativo()">Administrativo</button>  
             </div>
         </div>
-    ` 
-} // em desevolvimento
+    `
+    // dados relatorio
+    rel02.innerText = `Cliente: Não` 
+} 
 
 // funcao comercial e seus filhos
 // filhos: jose de freitas , santa teresa
 let comercial = function(){
-
+    // passo 3
     passo03.innerHTML = `
         <div class="pos">
             <h4>Comercial</h4>
@@ -79,12 +85,13 @@ let comercial = function(){
             </div>
         </div>
     `
+    rel03.innerText = `Clicou: Comercial`
 }
 
 // botao jose de freitas e seus filhos
 // filhos: zonaRural , Cidade
 let comercialJoseDeFreitas = function(){
-
+    // passo 4
     passo04.innerHTML = `
         <div class="pos">
             <h4>Jose de Freitas</h4>
@@ -94,10 +101,22 @@ let comercialJoseDeFreitas = function(){
             </div>
         </div>  
     `
+    
 }
 
+// botao zona rural jose de freitas e seus filhos
 let josedefreitasZonaRural = function(){
-    console.log("em desevolvimento")
+    // passo 5
+    passo05.innerHTML = `
+        <div class="pos">
+            <h4>Zona rural: Cliente ja tem internet?</h4>
+            <div>
+                <button onclick="ClienteJaTemInternetSim()">Sim</button>
+                <button onclick="ClienteJaTemInternetNao()">Não</button>
+            </div>
+        </div>
+    `
+    rel05.innerText = `Zona rural: Jose de Freitas`
 }
 
 // botao cidade jose de freitas e seus filhos
@@ -112,6 +131,7 @@ let joseDeFreitasCidade = function(){
             </div>
         </div>
     `
+    rel05.innerText = `Cidade: Jose de Freitas `
 }
 
 let ClienteJaTemInternetSim = function(){
@@ -121,19 +141,18 @@ let ClienteJaTemInternetSim = function(){
             <p>Enteder a Necessidade? Plano atual do cliente!</p>
         </div>
     `
+    let nome = document.getElementById("nome").value
+    rel06.innerText = `${nome} ja tem internet`
+    rel07.innerText = `Enteder qual e a necessidade? Plano atual do Cliente`
 }
 
 let ClienteJaTemInternetNao = function(){
     console.log("em desvolvimento")
 }
 
-
-
 let comercialSantaTeresa = function(){
     console.log("em desevolvimento")
 }
-
-
 
 // administrativo e seus filhos
 let administrativo = function(){
@@ -169,7 +188,7 @@ function finaceiro(){
 function sViaBoleto(){
     
     console.log("boleto")
-
+    // passo 4
     let sViaBoleto = document.getElementById("passo04")
     sViaBoleto.innerHTML = `
     <div class="segunda_via_boleto">
@@ -180,7 +199,8 @@ function sViaBoleto(){
             <button onclick="videoExplicativo()">Video Explicativo</button>
         </div>
     </div>
-    ` // html ja atualizado
+    ` 
+    rel04.innerText = `Segunda Via Boleto`
 }
 
 // via boletos botao pdf
@@ -196,11 +216,12 @@ function linkCentralDeAtendimento(){
 // via boletos botao do video explicativo
 function videoExplicativo(){
     console.log("video explicativo")
-
-    let videoExplicativo = document.getElementById("passo05")//passo 5
+    //passo 5
+    let videoExplicativo = document.getElementById("passo05")
     videoExplicativo.innerHTML = `
     <iframe width="100%" height="500" src="https://www.youtube.com/embed/BTYAsjAVa3I" title="3 A.M Study Session 📚 - [lofi hip hop/chill beats]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     `
+    rel05.innerText = `Assistindo video explicativo do pagamento via Boleto`
 }
 
 
@@ -208,7 +229,7 @@ function videoExplicativo(){
 function pagamentoPix(){
     
     console.log("pix")
-
+    //passo 4
     let pagamentoPix = document.getElementById("passo04")
     pagamentoPix.innerHTML = `
     <div class="pagamento_via_pix">
@@ -218,7 +239,8 @@ function pagamentoPix(){
             <button onclick="comprovante()">Comprovante</button>
         </div>
     </div>
-    `//Ja atualizado
+    `
+    rel04.innerText = `Clicou: Pagamento Via Pix`
 }
 
 //pagamento via pix botao fazerpix
@@ -231,6 +253,8 @@ function fazerPix(){
             <iframe width="100%" height="500" src="https://www.youtube.com/embed/bzD2ZB4IShA" title="Moonlight - AlcNdr (Cyberpunk Edgerunners)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     `
+    rel05.innerText = `Assistindo video explicativo...`
+
     let centralDoPix = document.getElementById("passo06") // passo 6
     centralDoPix.innerHTML = `
     <div class="central_pix">
@@ -261,6 +285,7 @@ function negociacao(){
             </div>
         </div>
     `
+    rel04.innerText = `Clicou: Negociaçâo`
 }
 
 function reativacao(){
@@ -285,7 +310,8 @@ function enviarComprovante(){
             <button onclick="enviarComprovantePix()">Pix</button>
         </div>
     </div>
-    `//ja atualizado
+    `
+    rel04.innerText = `Clicou: Enviar Comprovante`
 }
 
 // caixa de msg que mostra informação do que fazer com o boleto
@@ -298,6 +324,7 @@ function enviarComprovanteBoleto(){
             <p>Colocar promessa de pagamento referente a boleto pago para 48 horas.</p>
         </div>
     ` 
+    rel05.innerText = `Coloque a promessa de pagamento pra 48 horas`
 
     let finalizarComCliente = document.getElementById("passo06") // passo 6
     finalizarComCliente.innerHTML = `
@@ -307,6 +334,7 @@ function enviarComprovanteBoleto(){
             </button>
         </div>
     `
+    rel06.innerText = `Finalizar com o cliente` 
 }
 
 // caixa de msg que mostra informação do que fazer com o pix
@@ -320,6 +348,7 @@ function enviarComprovantePix(){
             <p>Anexar o comprovante do pix do cliente no cadastro do SGP e avisar no grupo para baixar o boleto.</p>
         </div>
     `
+    rel05.innerText = `Anexar o comprovante do pix do cliente no cadastro do SGP e avisar no grupo para baixar o boleto.`
 
     let finalizarComClientePix = document.getElementById("passo06") // passo 6
     finalizarComClientePix.innerHTML = `
@@ -329,6 +358,7 @@ function enviarComprovantePix(){
             </button>
         </div>
     `
+    rel06.innerText = `Finalizar com o Cliente`
 }
 
 
@@ -347,7 +377,9 @@ function promessaDePagamento(){
                 <button>Não</button>
             </div>
         </div>
-    `    // esses dois botoes vao pro passo 5
+    `
+    rel04.innerText = `Clicou: Promessa de Pagamento`
+    // esses dois botoes vao pro passo 5
 }
 
 
@@ -365,9 +397,7 @@ function suporteTecnico(){
             </div>
     </div>
     `
-    let relatorioFinaceiro = document.getElementById("rel03")
-    relatorioFinaceiro.innerText = `Clicou em: Suporte Tecnico`
-    console.log("Clicou em: Suporte Tecnico")
+    rel03.innerText = `Clicou: Suporte Tecnico`
 }
 
 function JoseDeFreitas(){
@@ -382,9 +412,7 @@ function JoseDeFreitas(){
             </div>
     </div>
     `
-    let relatorioConexaoJoseDeFreitas = document.getElementById("rel04")
-    relatorioConexaoJoseDeFreitas.innerText = `Conexão de Jose De Freitas`
-    console.log("Conexão de Jose De Freitas")
+   rel04.innerText = `Conexão De Jose de Freitas`
 }
 
 function santaTeresa(){
@@ -399,9 +427,7 @@ function santaTeresa(){
             </div>
         </div>
     `
-    let relatorioSantaTeresa = document.getElementById("rel04")
-    relatorioSantaTeresa.innerText = `Conexão da Santa Teresa`
-    console.log("Conexão da Santa Teresa")
+    rel04.innerText = `Conexão da Santa teresa`
 }
 
 //funcoes de codigo pra mostrar as opçoes de tipos de problemas jose de freitas
@@ -420,9 +446,7 @@ function fibraJs(){
             </div>
         </div>
     `
-    let relatorioFibraJs = document.getElementById("rel05")
-    relatorioFibraJs.innerText = `Via: Fibra`
-    console.log("Via: Fibra")
+    rel05.innerText = `Via: Fibra`
 }
 function radioJs(){
     let radio = document.getElementById("passo05")// id passo05
@@ -438,8 +462,7 @@ function radioJs(){
             </div>
         </div>
     `
-    let relatorioRadioJs = document.getElementById("rel05")
-    relatorioRadioJs.innerText = `Via: Radio`
+    rel05.innerText = `Via Radio`
 
     console.log("Via: Radio")
 }
@@ -460,9 +483,7 @@ function fibraSt(){
             </div>
     </div>
     `
-    let relatorioFibraSt = document.getElementById("rel05")
-    relatorioFibraSt.innerText = `Via: Fibra`
-    console.log("Via: Fibra")
+    rel05.innerText = `Via: Fibra`
 }
 function radioSt(){
 
@@ -479,9 +500,7 @@ function radioSt(){
             </div>
     </div>
     `
-    let relatorioRadioSt = document.getElementById("rel05")
-    relatorioRadioSt.innerText = `Via: Radio`
-    console.log("Via Radio")
+    rel05.innerText = `Via Radio`
 }
 
 //funcoes que mostram o motivo da solicitação
