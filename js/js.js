@@ -57,7 +57,7 @@ function finaceiro(){
                 <button onclick="promessaDePagamento()">Promessa De Pagamento</button>
             </div> 
     </div>
-    ` //html do finaceiro ja att
+    `  
 
     let relatorioFinaceiro = document.getElementById("rel03")
     relatorioFinaceiro.innerText = `Clicou em: Finaceiro`
@@ -125,13 +125,13 @@ function pagamentoPix(){
 function fazerPix(){
     console.log("pix feito")
 
-    let fazerPix = document.getElementById("passo05")
+    let fazerPix = document.getElementById("passo05") // passo 5
     fazerPix.innerHTML = `
     <div class="video_pix">
             <iframe width="100%" height="500" src="https://www.youtube.com/embed/bzD2ZB4IShA" title="Moonlight - AlcNdr (Cyberpunk Edgerunners)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     `
-    let centralDoPix = document.getElementById("passo06")
+    let centralDoPix = document.getElementById("passo06") // passo 6
     centralDoPix.innerHTML = `
     <div class="central_pix">
         <button>Central do pix</button>
@@ -151,7 +151,7 @@ function negociacao(){
     
     console.log("negociaçao")
 
-    let negociacao = document.getElementById("passo04")
+    let negociacao = document.getElementById("passo04") //passo 4
     negociacao.innerHTML = `
         <div class="negociacao">
             <h4>Negociação</h4>
@@ -188,29 +188,32 @@ function enviarComprovante(){
     `//ja atualizado
 }
 
+// caixa de msg que mostra informação do que fazer com o boleto
 function enviarComprovanteBoleto(){
     console.log("comprovante boleto")
 
-    let enviarComprovanteBoleto = document.getElementById("passo05")
+    let enviarComprovanteBoleto = document.getElementById("passo05") // passo 5
     enviarComprovanteBoleto.innerHTML = `
         <div class="texto_info_promessa">
             <p>Colocar promessa de pagamento referente a boleto pago para 48 horas.</p>
         </div>
     ` 
 
-    let finalizarComCliente = document.getElementById("passo06")
+    let finalizarComCliente = document.getElementById("passo06") // passo 6
     finalizarComCliente.innerHTML = `
         <div class="texto_finalizar">
-            <button onclick="alert('Ola mundo')">
+            <button onclick="load()">
                 <p>Finalizar com o Cliente</p>
             </button>
         </div>
     `
 }
+
+// caixa de msg que mostra informação do que fazer com o pix
 function enviarComprovantePix(){
     console.log("comprovante pix")
 
-    let enviarComprovantePix = document.getElementById("passo05")
+    let enviarComprovantePix = document.getElementById("passo05") // passo 5
     enviarComprovantePix.innerHTML = `
         
         <div class="texto_info_anexar">
@@ -218,10 +221,10 @@ function enviarComprovantePix(){
         </div>
     `
 
-    let finalizarComClientePix = document.getElementById("passo06")
+    let finalizarComClientePix = document.getElementById("passo06") // passo 6
     finalizarComClientePix.innerHTML = `
         <div class="texto_finalizar">
-            <button onclick="alert('Ola mundo')">
+            <button onclick="load()">
                 <p>Finalizar com o Cliente</p>
             </button>
         </div>
@@ -234,17 +237,17 @@ function promessaDePagamento(){
     
     console.log("promessa de pagamento")
 
-    let promessaDePagamento = document.getElementById("passo04")
+    let promessaDePagamento = document.getElementById("passo04") // passo 4
     promessaDePagamento.innerHTML = `
         <div class="promessa_de_pagamento">
             <h4>Promessa de Pagamento</h4>
             <p>Verificar Se o cliente ainda promessa ou se pediu nesse més</p>
             <div>
-                <button>Sim</button>
+                <button>Sim</button> 
                 <button>Não</button>
             </div>
         </div>
-    `    
+    `    // esses dois botoes vao pro passo 5
 }
 
 
@@ -382,6 +385,7 @@ function radioSt(){
 }
 
 //funcoes que mostram o motivo da solicitação
+//lentidao , queda , offline , nao-conectado
 function lentidao(){
     console.log("Motivo lentidão")
 }
@@ -408,4 +412,8 @@ function comercial(){
 //objetos mostrados no console
 
 
+//funcao do botao que vai regarregar a pagina
 
+let load = function(){
+    location.reload();
+}
