@@ -1,3 +1,12 @@
+// ids das divs pra mim pegar e substituir 
+let passo01 = document.getElementById("passo01")
+let passo02 = document.getElementById("passo02")
+let passo03 = document.getElementById("passo03")
+let passo04 = document.getElementById("passo04")
+let passo05 = document.getElementById("passo05")
+let passo06 = document.getElementById("passo06")
+
+
 //funçao de enviar recebe o nome do cliente
 function enviar(){
     let nome = document.getElementById("nome").value
@@ -6,7 +15,7 @@ function enviar(){
     let passo01 = document.getElementById("passo01")// id passo01
 
     passo01.innerHTML = 
-    ` <div class="passo01"> 
+    ` <div class="pos"> 
         <h4>${nome} é cliente?</h4>
         <div>
             <button onclick="clienteSim()">Sim</button>
@@ -40,6 +49,97 @@ function clienteSim(){
     relatorioCliente.innerText = `Cliente: Sim`
     console.log("Cliente: sim")
 }
+
+// função se o cliente clicar em não 
+// botoes comercial , administrativo
+let clienteNao = function(){
+
+    //passo 2
+    passo02.innerHTML = `
+        <div class="pos">
+            <h4>Não é Cliente</h4>
+            <div>
+                <button onclick="comercial()">Comercial</button>
+                <button onclick="administrativo()">Administrativo</button>  
+            </div>
+        </div>
+    ` 
+} // em desevolvimento
+
+// funcao comercial e seus filhos
+// filhos: jose de freitas , santa teresa
+let comercial = function(){
+
+    passo03.innerHTML = `
+        <div class="pos">
+            <h4>Comercial</h4>
+            <div>
+                <button onclick="comercialJoseDeFreitas()">José de Freitas</button>
+                <button onclick="comercialSantaTeresa()">Santa Teresa</button>
+            </div>
+        </div>
+    `
+}
+
+// botao jose de freitas e seus filhos
+// filhos: zonaRural , Cidade
+let comercialJoseDeFreitas = function(){
+
+    passo04.innerHTML = `
+        <div class="pos">
+            <h4>Jose de Freitas</h4>
+            <div>
+                <button onclick="josedefreitasZonaRural()">Zona rural</button>
+                <button onclick="joseDeFreitasCidade()">Cidade</button>
+            </div>
+        </div>  
+    `
+}
+
+let josedefreitasZonaRural = function(){
+    console.log("em desevolvimento")
+}
+
+// botao cidade jose de freitas e seus filhos
+let joseDeFreitasCidade = function(){
+    // passo 5
+    passo05.innerHTML = `
+        <div class="pos">
+            <h4>Cidade: Cliente ja tem internet?</h4>
+            <div>
+                <button onclick="ClienteJaTemInternetSim()">Sim</button>
+                <button onclick="ClienteJaTemInternetNao()">Não</button>
+            </div>
+        </div>
+    `
+}
+
+let ClienteJaTemInternetSim = function(){
+    // passo 6
+    passo06.innerHTML = `
+        <div class="texto-info">
+            <p>Enteder a Necessidade? Plano atual do cliente!</p>
+        </div>
+    `
+}
+
+let ClienteJaTemInternetNao = function(){
+    console.log("em desvolvimento")
+}
+
+
+
+let comercialSantaTeresa = function(){
+    console.log("em desevolvimento")
+}
+
+
+
+// administrativo e seus filhos
+let administrativo = function(){
+    console.log("clicou em: administrativo")
+}// ainda em desevolvimento
+
 
 //funcão se clicar em finaceiros e seus caminhos
 function finaceiro(){
@@ -401,9 +501,6 @@ function nao_Conectado(){
 
 
 //função comercial ainda em desevolvimento
-function comercial(){
-    console.log("comer")
-}
 
 
 
