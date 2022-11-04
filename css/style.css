@@ -11,6 +11,7 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: #3281AF;
+    box-shadow: #1C1C1C 0px 8px 10px 1px;
 }
 
 header .boas_vindas{
@@ -27,17 +28,23 @@ header img{
 .cont{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 80%;
     margin: auto;
     padding: 20px;
-    background-color: #E0FFFF;
+    background-color: rgba(224, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: #1C1C1C 1px 2px 10px 3px;
 }
 
-/*estilo do relatorio*/
+/*Estilo do relatorio*/
 .relatorio{
     margin: 20px auto;
     background-color: white;
     width: 50%;
+}
+/*estilo das divs rel que estar dentro de relatorio*/
+.rel{
+    margin-top: 5px;
 }
 
 /*margin de 30px pra qualquer elemento*/
@@ -45,7 +52,7 @@ header img{
     margin-top: 30px; 
 }
 
-/*estilo da class de captura*/
+/*estilo da class de captura , essa classe que recebe o nome do cliente*/
 .captura{
     display: flex;
     flex-direction: column;
@@ -56,16 +63,18 @@ header img{
 
 .captura p{
     font-size: 25px;
+    font-family: cursive;
 }
 .captura input{
     margin-top: 10px;
     width: 70%;
     height: 30px;
-    font-size: 15px;
+    font-size: 14px;
     border:  solid 0.1px #A9A9A9;
-    border-radius: 3px;
+    border-radius: 15px;
     color: #1C1C1C;
     padding: 5px;
+    text-align: center;
 }
 
 .captura button{
@@ -75,104 +84,15 @@ header img{
     border: 0.1px solid #A9A9A9;
     background-color: #3281AF;
     color: white;
-    
+    font-family: cursive;
+    box-shadow: #1C1C1C 1px 2px 3px 0px;
 }
 .captura button:hover{
     background-color: white;
     color: #3281AF;
 }
+/*fim do estilo da div de captura*/
 
-/*estilo da opção de cliente*/
-
-/*estilo passo01*/
-.passo01{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 30px;
-    width: 40%;
-    text-align: center;
-}
-.passo01, .passo02, h4{
-    font-size: 20px;
-}
-.passo01 button{
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    border: 0.1px solid #A9A9A9;
-    background-color: #3281AF;
-    color: white;
-    font-size: 15px;
-}
-.passo01 button:hover{
-    background-color: white;
-    color: #3281AF;
-}
-/*estilo passo 02*/
-
-.passo02{
-    margin: 20px auto;
-    width: 70%;
-    text-align: center;
-}
-.passo02 button{
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    border: 0.1px solid #A9A9A9;
-    background-color: #3281AF;
-    color: white;
-    font-size: 15px;
-}
-.passo02 button:hover{
-    background-color: white;
-    color: #3281AF;
-}
-
-/*estilo do caminhos finaceiro*/
-.finaceiro{
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    width: 100%;
-    text-align: center;
-}
-.finaceiro button{
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    border: 0.1px solid #A9A9A9;
-    background-color: #3281AF;
-    color: white;
-    font-size: 15px;
-}
-.finaceiro button:hover{
-    background-color: white;
-    color: #3281AF;
-}
-
-/*sugunda via boleto e seus estilos*/
-.segunda_via_boleto{
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    width: 100%;
-    text-align: center;
-}
-.segunda_via_boleto button{
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    border: 0.1px solid #A9A9A9;
-    background-color: #3281AF;
-    color: white;
-    font-size: 15px;
-}
-.segunda_via_boleto button:hover{
-    background-color: white;
-    color: #3281AF;
-}
 
 /*estilo do video de explicação*/
 .video_explicativo iframe{
@@ -183,105 +103,20 @@ header img{
     margin-top: 20px;
 }
 
-/*pagamentos e seus estilos*/
-.pagamento_via_pix{
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    width: 100%;
-    text-align: center;
-}
-.pagamento_via_pix button{
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    border: 0.1px solid #A9A9A9;
-    background-color: #3281AF;
-    color: white;
-    font-size: 15px;
-}
-.pagamento_via_pix button:hover{
-    background-color: white;
-    color: #3281AF;
-}
-
-/*estilo do botao do caminho pagamento pix*/
-.central_pix{
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    width: 30%;
-    text-align: center;
-}
-
-.central_pix button{
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    border: 0.1px solid #A9A9A9;
-    background-color: #3281AF;
-    color: white;
-    font-size: 15px;
-}
-.central_pix button:hover{
-    background-color: white;
-    color: #3281AF;
-}
-
-/*negociacão e seus estilos*/
-.negociacao{
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    width: 100%;
-    text-align: center;
-}
-.negociacao button{
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    border: 0.1px solid #A9A9A9;
-    background-color: #3281AF;
-    color: white;
-    font-size: 15px;
-}
-.negociacao button:hover{
-    background-color: white;
-    color: #3281AF;
-}
-
-/*enviar comprovante e seus estilos*/
-.enviar_comprovante{
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    width: 100%;
-    text-align: center;
-}
-.enviar_comprovante button{
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    border: 0.1px solid #A9A9A9;
-    background-color: #3281AF;
-    color: white;
-    font-size: 15px;
-}
-.enviar_comprovante button:hover{
-    background-color: white;
-    color: #3281AF;
-}
-
 /*estilo de informaçao da promessa do pagamento do boleto*/
 .texto_info_promessa{
     text-align: center;
-    padding: 5px;
-    background-color: #A9A9A9;
-    width: 80%;
+    padding: 10px;
+    width: 90%;
     margin: 20px auto;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: #1C1C1C 3px 2px 8px 1px;
+    font-family: cursive;
+    color: white;
+    background-color: 	#708090;
 }
 
+/*Estilo do botao que finaliza com o cliente e regarrega a pagina*/
 .texto_finalizar{
     text-align: center;
     padding: 5px;
@@ -290,109 +125,24 @@ header img{
     margin: 20px auto;
     border-radius: 10px;
     color: #E0FFFF;
+    font-family: cursive;
+    box-shadow: #1C1C1C 3px 2px 5px 1px;
 }
-.texto_finalizar button{
-    background-color: #8B0000;
-    color: white;
-    border: none;
+.texto_finalizar p{
+    font-size: 13px;
 }
 
+/*Estilo do texto informativo pra anexar o comprovante*/
 .texto_info_anexar{
     text-align: center;
-    padding: 5px;
-    background-color: #FFD700;
+    padding: 10px;
+    background-color: #9370DB;
+    box-shadow: #1C1C1C 4px 4px 8px 1px;
     width: 80%;
     margin: 20px auto;
     border-radius: 10px;
-}
-
-/*promessa de pagamento e seus estilos*/
-.promessa_de_pagamento{
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    width: 100%;
-    text-align: center;
-}
-.promessa_de_pagamento button{
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    border: 0.1px solid #A9A9A9;
-    background-color: #3281AF;
+    font-family: cursive;
     color: white;
-    font-size: 15px;
-}
-.promessa_de_pagamento button:hover{
-    background-color: white;
-    color: #3281AF;
-}
-
-
-/*estilo dos caminhos suporte tecnico*/
-.suporte_Tecnico{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 60%;
-    text-align: center;
-}
-.suporte_Tecnico button{
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    border: 0.1px solid #A9A9A9;
-    background-color: #3281AF;
-    color: white;
-    font-size: 15px;
-}
-.suporte_Tecnico button:hover{
-    background-color: white;
-    color: #3281AF;
-}
-
-/*estilos dos botes de tipos de conexão*/
-.tipo_da_conexao{
-    display: flex;
-    flex-direction: column;
-    margin: 10px auto;
-    width: 60%;
-    text-align: center;
-}
-.tipo_da_conexao button{
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    border: 0.1px solid #A9A9A9;
-    background-color: #3281AF;
-    color: white;
-    font-size: 15px;
-}
-.tipo_da_conexao button:hover{
-    background-color: white;
-    color: #3281AF;
-}
-
-/*estilos dos botoes de possiveis problemas*/
-.problemas{
-    display: flex;
-    flex-direction: column;
-    margin: 10px auto;
-    width: 90%;
-    text-align: center;
-}
-.problemas button{
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    border: 0.1px solid #A9A9A9;
-    background-color: #3281AF;
-    color: white;
-    font-size: 15px;
-}
-.problemas button:hover{
-    background-color: white;
-    color: #3281AF;
 }
 
 /*essa parte vai ser criada estilos pra padronizar a estilizaçao do sistema*/
@@ -424,16 +174,16 @@ header img{
 .texto-info{
     text-align: center;
     padding: 5px;
-    background-color: #A9A9A9;
+    background-color: #9370db;
     width: 80%;
     margin: 20px auto;
     border-radius: 10px;
+    box-shadow: #1C1C1C 3px 2px 5px 1px;
+    font-family: cursive;
+    color: white;
 }
 
-/*estilo da div relatorio*/
-.rel{
-    margin-top: 5px;
-}
+
 
 
 

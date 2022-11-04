@@ -166,7 +166,7 @@ function finaceiro(){
     let finaceiro = document.getElementById("passo03")// id passo03
 
     finaceiro.innerHTML = `
-    <div class="finaceiro">
+    <div class="pos">
             <h4>Finaceiro</h4>
             <div>
                 <button onclick="sViaBoleto()">2 Via Boleto</button>
@@ -191,7 +191,7 @@ function sViaBoleto(){
     // passo 4
     let sViaBoleto = document.getElementById("passo04")
     sViaBoleto.innerHTML = `
-    <div class="segunda_via_boleto">
+    <div class="pos">
         <h4>Segunda Via Boleto</h4>
         <div>
             <button onclick="pdf()">Pdf</button>
@@ -232,7 +232,7 @@ function pagamentoPix(){
     //passo 4
     let pagamentoPix = document.getElementById("passo04")
     pagamentoPix.innerHTML = `
-    <div class="pagamento_via_pix">
+    <div class="pos">
         <h4>Pagamento Via Pix</h4>
         <div>
             <button onclick="fazerPix()">Fazer Pix</button>
@@ -277,7 +277,7 @@ function negociacao(){
 
     let negociacao = document.getElementById("passo04") //passo 4
     negociacao.innerHTML = `
-        <div class="negociacao">
+        <div class="pos">
             <h4>Negociação</h4>
             <div>
                 <button>Reativação</button>
@@ -303,7 +303,7 @@ function enviarComprovante(){
 
     let enviarComprovante = document.getElementById("passo04")// Passo 4
     enviarComprovante.innerHTML = `
-    <div class="enviar_comprovante">
+    <div class="pos">
         <h4>Enviar Comprovante</h4>
         <div>
             <button onclick="enviarComprovanteBoleto()">Boleto</button>
@@ -328,10 +328,8 @@ function enviarComprovanteBoleto(){
 
     let finalizarComCliente = document.getElementById("passo06") // passo 6
     finalizarComCliente.innerHTML = `
-        <div class="texto_finalizar">
-            <button onclick="load()">
-                <p>Finalizar com o Cliente</p>
-            </button>
+        <div class="texto_finalizar" onclick="load()">
+            <p>Finalizar com o Cliente</p>
         </div>
     `
     rel06.innerText = `Finalizar com o cliente` 
@@ -352,10 +350,8 @@ function enviarComprovantePix(){
 
     let finalizarComClientePix = document.getElementById("passo06") // passo 6
     finalizarComClientePix.innerHTML = `
-        <div class="texto_finalizar">
-            <button onclick="load()">
-                <p>Finalizar com o Cliente</p>
-            </button>
+        <div class="texto_finalizar" onclick="load()">
+            <p>Finalizar com o Cliente</p>
         </div>
     `
     rel06.innerText = `Finalizar com o Cliente`
@@ -369,9 +365,9 @@ function promessaDePagamento(){
 
     let promessaDePagamento = document.getElementById("passo04") // passo 4
     promessaDePagamento.innerHTML = `
-        <div class="promessa_de_pagamento">
-            <h4>Promessa de Pagamento</h4>
-            <p>Verificar Se o cliente ainda promessa ou se pediu nesse més</p>
+        <div class="pos">
+            <h4>Promessa De Pagamento</h4>
+            <p>Verificar se o cliente ainda promessa ou se pediu nesse més</p>
             <div>
                 <button>Sim</button> 
                 <button>Não</button>
@@ -389,7 +385,7 @@ function suporteTecnico(){
     let suporteTecnico = document.getElementById("passo03") // id passo03
 
     suporteTecnico.innerHTML = `
-    <div class="suporte_Tecnico">
+    <div class="pos">
             <h4>Conexão</h4>
             <div>
                 <button onclick="JoseDeFreitas()">José De Freitas</button>
@@ -404,7 +400,7 @@ function JoseDeFreitas(){
     let JoseDeFreitas = document.getElementById("passo04")// id passo04
 
     JoseDeFreitas.innerHTML = `
-    <div class="tipo_da_conexao">
+    <div class="pos">
             <h4>Conexão José De Freitas</h4>
             <div>
                 <button onclick="fibraJs()">Fibra</button>
@@ -419,7 +415,7 @@ function santaTeresa(){
     let santaTeresa = document.getElementById("passo04")// id passo04
 
     santaTeresa.innerHTML = `
-        <div class="tipo_da_conexao">
+        <div class="pos">
             <h4>Conexão Santa Teresa</h4>
             <div>
                 <button onclick="fibraSt()">Fibra</button>
@@ -436,7 +432,7 @@ function fibraJs(){
     let fibra = document.getElementById("passo05")// id passo05
 
     fibra.innerHTML = `
-        <div class="problemas">
+        <div class="pos">
             <h4>Jose De Freitas: Fibra</h4>
             <div>
                 <button onclick="lentidao()">Lentidão</button>
