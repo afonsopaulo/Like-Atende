@@ -177,10 +177,11 @@ function finaceiro(){
             </div> 
     </div>
     `  
+    rel03.innerText = `Clicou em: Finaceiro`
 
-    let relatorioFinaceiro = document.getElementById("rel03")
-    relatorioFinaceiro.innerText = `Clicou em: Finaceiro`
-    console.log("Clicou em : Finaceiro")
+    //let relatorioFinaceiro = document.getElementById("rel03")
+    //relatorioFinaceiro.innerText = `Clicou em: Finaceiro`
+    console.log("Clicou em : Finaceiro")    
 }
 
 
@@ -266,9 +267,6 @@ function fazerPix(){
 function comprovante(){
     console.log("comprovante")
 }
-
-
-
 
 //negociação e seus caminhos
 function negociacao(){
@@ -448,7 +446,7 @@ function radioJs(){
     let radio = document.getElementById("passo05")// id passo05
 
     radio.innerHTML = `
-        <div class="problemas">
+        <div class="pos">
             <h4>Jose De Freitas: Radio</h4>
             <div>
                 <button onclick="lentidao()">Lentidão</button>
@@ -469,7 +467,7 @@ function fibraSt(){
     let fibra = document.getElementById("passo05")// id passo05
 
     fibra.innerHTML = `
-    <div class="problemas">
+    <div class="pos">
             <h4>Santa Teresa: Fibra</h4>
             <div>
                 <button onclick="lentidao()">Lentidão</button>
@@ -486,7 +484,7 @@ function radioSt(){
     let radio = document.getElementById("passo05")// id passo05
 
     radio.innerHTML = `
-    <div class="problemas">
+    <div class="pos">
             <h4>Santa Teresa: Radio</h4>
             <div>
                 <button onclick="lentidao()">Lentidão</button>
@@ -521,15 +519,6 @@ function nao_Conectado(){
     rel06.innerText = `Motivo: Não Conectado`
     console.log("Motivo Não Conectado")
 }
-
-
-//função comercial ainda em desevolvimento
-
-
-
-
-
-//objetos mostrados no console
 
 
 //funcao do botao que vai regarregar a pagina
