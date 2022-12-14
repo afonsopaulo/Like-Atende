@@ -31,9 +31,9 @@ header img{
     width: 60%;
     margin: auto;
     padding: 20px;
-    background-color: rgba(224, 255, 255, 0.5);
+    /*background-color: rgba(224, 255, 255, 0.5);
     border-radius: 15px;
-    box-shadow: #1C1C1C 1px 2px 10px 3px;
+    box-shadow: #1C1C1C 1px 2px 10px 3px;*/
 }
 
 /*Estilo do relatorio*/
@@ -110,10 +110,9 @@ header img{
     width: 90%;
     margin: 20px auto;
     border-radius: 15px;
-    box-shadow: #1C1C1C 3px 2px 8px 1px;
     font-family: cursive;
     color: white;
-    background-color: 	#708090;
+    background-color: #708090;
 }
 
 /*Estilo do botao que finaliza com o cliente e regarrega a pagina*/
@@ -125,8 +124,7 @@ header img{
     margin: 20px auto;
     border-radius: 10px;
     color: #E0FFFF;
-    font-family: cursive;
-    box-shadow: #1C1C1C 3px 2px 5px 1px;
+    font-family: 'popins';
 }
 .texto_finalizar p{
     font-size: 13px;
@@ -137,7 +135,6 @@ header img{
     text-align: center;
     padding: 10px;
     background-color: #9370DB;
-    box-shadow: #1C1C1C 4px 4px 8px 1px;
     width: 80%;
     margin: 20px auto;
     border-radius: 10px;
@@ -175,11 +172,10 @@ header img{
 .texto-info{
     text-align: center;
     padding: 5px;
-    background-color: #9370db;
+    background-color: #3281AF;
     width: 80%;
     margin: 20px auto;
     border-radius: 10px;
-    box-shadow: #1C1C1C 3px 2px 5px 1px;
-    font-family: cursive;
+    font-family: 'popins';
     color: white;
 }
